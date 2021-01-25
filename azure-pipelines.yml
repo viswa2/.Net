@@ -29,3 +29,8 @@ steps:
 - task: NuGetAuthenticate@0
   inputs:
     forceReinstallCredentialProvider: true
+
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    useGlobalJson: true
