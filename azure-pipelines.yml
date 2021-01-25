@@ -20,4 +20,9 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    nuget.exe restore
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*.sln'
+    feedsToUse: 'select'
+    vstsFeed: 'ed73c379-ab88-4829-a92b-4a2af19b5e4e/e668fbbc-9a87-413d-98ec-f4fba102e780'
