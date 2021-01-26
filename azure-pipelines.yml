@@ -28,3 +28,8 @@ steps:
   inputs:
     command: build
     projects: '**/*.csproj'
+    - task: ServiceFabricUpdateManifests@2
+      inputs:
+        updateType: 'Manifest versions'
+        versionSuffix: '.$(Build.BuildNumber)'
+        updateOnlyChanged: false
