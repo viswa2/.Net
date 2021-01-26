@@ -27,3 +27,4 @@ steps:
   displayName: Build
   inputs:
     command: build
+    projects: 'myrepo/test/test.csproj'
