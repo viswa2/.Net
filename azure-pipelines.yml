@@ -28,7 +28,7 @@ steps:
   inputs:
     command: build
     projects: '**/*.csproj'
-Settings    
+
 - task: ServiceFabricUpdateManifests@2
   inputs:
     updateType: 'Manifest versions'
