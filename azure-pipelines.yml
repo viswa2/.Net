@@ -27,5 +27,3 @@ steps:
   displayName: Build
   inputs:
     command: build
-    projects:
-      src/proj1/proj1.csproj 
